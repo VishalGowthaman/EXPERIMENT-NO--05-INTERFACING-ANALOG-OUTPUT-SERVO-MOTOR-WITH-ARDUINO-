@@ -52,8 +52,6 @@ CIRCUIT DIAGRAM
  
  ![image](https://user-images.githubusercontent.com/36288975/163544618-6eb8a7b5-7f1a-428a-8d9f-fd899b145efb.png)
 
-### FIGURE 04 CIRCUIT DIAGRAM
-
 ### PROCEDURE:
 1.	Connect the circuit as per the circuit diagram 
 2.	Connect the board to your computer via the USB cable.
@@ -67,7 +65,29 @@ CIRCUIT DIAGRAM
 
 
 ### PROGRAM :
- 
+ ```
+ #include<Servo.h>
+Servo s1;
+void setup()
+{
+  s1.attach(9);
+}
+void loop()
+{
+  for (int i=0;i<=180;i+=1)
+  {
+    s1.write(i);
+    delay(15);
+  }
+  for (int i=180;i>=0;i-=1)
+  {
+    s1.write(i);
+    delay(15);
+  }
+}
+```
+### OUTPUT:
+![](
 
 
 
